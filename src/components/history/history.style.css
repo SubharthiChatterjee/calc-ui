@@ -1,0 +1,64 @@
+.listContainer {
+  display: flex;
+  box-shadow: 0 8px 50px -7px #79936e;
+  flex-direction: column;
+  padding: 2em 2.2em;
+  padding-top: .5em;
+  overflow: auto;
+  min-width: 300px;
+  background: var(--background2);
+  color: #fff;
+  max-height: 80vh;
+
+}
+
+.listContainer .item {
+  padding: .5em 0;
+}
+
+.listContainer .userName {
+  /* padding: .5em 0; */
+  font-size: 1.2em;
+}
+
+.listContainer .info {
+  font-size: .95em;
+}
+
+.flexRow {
+  display: flex;
+  gap: 1em;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.move-enter {
+  opacity: 0.01;
+  transform: translate(-40px, 0)
+}
+
+.move-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 500ms ease-in;
+}
